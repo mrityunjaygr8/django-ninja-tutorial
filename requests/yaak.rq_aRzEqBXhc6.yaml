@@ -2,11 +2,13 @@ type: http_request
 model: http_request
 id: rq_aRzEqBXhc6
 createdAt: 2026-11-13T09:11:24.725083787
-updatedAt: 2026-11-13T09:57:31.710365836
+updatedAt: 2026-11-13T11:35:03.261551502
 workspaceId: wk_EcscdC8jYZ
 folderId: fl_LXsKpCs6W3
-authentication: {}
-authenticationType: null
+authentication:
+  prefix: Bearer
+  token: ${[auth_jwtauth_token]}
+authenticationType: bearer
 body: {}
 bodyType: null
 description: |-
@@ -26,8 +28,8 @@ headers:
   id: null
 method: GET
 name: List Tasks
-sortPriority: 8.0
-url: ${[baseUrl]}/api/projects/4/tasks/
+sortPriority: 13.0
+url: ${[baseUrl]}/api/projects/6/tasks/
 urlParameters:
 - enabled: true
   name: :project_id

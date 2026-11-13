@@ -1,0 +1,55 @@
+type: http_request
+model: http_request
+id: rq_QJGNytrpLP
+createdAt: 2026-11-13T11:24:36.615319342
+updatedAt: 2026-11-13T11:24:43.243081957
+workspaceId: wk_EcscdC8jYZ
+folderId: fl_sjsXspt9S4
+authentication:
+  prefix: Bearer
+  token: ${[auth_jwtauth_token]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: |-
+  List Members
+
+  Operation ID: projects_api_list_members
+
+  Parameters:
+  - project_id (path, required)
+
+  Responses:
+  - 200: OK
+headers:
+- enabled: true
+  name: Accept
+  value: application/json
+  id: null
+method: GET
+name: List Members
+sortPriority: 12.0
+url: ${[baseUrl]}/api/projects/6/members
+urlParameters:
+- enabled: true
+  name: :project_id
+  value: '0'
+  id: null
+settingSendCookies:
+  enabled: false
+  value: true
+settingStoreCookies:
+  enabled: false
+  value: true
+settingValidateCertificates:
+  enabled: false
+  value: true
+settingFollowRedirects:
+  enabled: false
+  value: true
+settingRequestTimeout:
+  enabled: false
+  value: 0
+settingHttpVersion:
+  enabled: false
+  value: auto

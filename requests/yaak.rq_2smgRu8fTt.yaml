@@ -2,11 +2,13 @@ type: http_request
 model: http_request
 id: rq_2smgRu8fTt
 createdAt: 2026-11-13T08:48:58.689071423
-updatedAt: 2026-11-13T09:17:01.740953749
+updatedAt: 2026-11-13T11:22:41.456122410
 workspaceId: wk_EcscdC8jYZ
 folderId: fl_sjsXspt9S4
-authentication: {}
-authenticationType: null
+authentication:
+  prefix: Bearer
+  token: ${[auth_jwtauth_token]}
+authenticationType: bearer
 body: {}
 bodyType: null
 description: |-
@@ -26,8 +28,8 @@ headers:
   id: null
 method: GET
 name: Get Project
-sortPriority: 5.0
-url: ${[baseUrl]}/api/projects/4
+sortPriority: 9.0
+url: ${[baseUrl]}/api/projects/6
 urlParameters:
 - enabled: true
   name: :project_id

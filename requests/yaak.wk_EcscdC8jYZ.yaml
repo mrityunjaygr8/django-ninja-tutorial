@@ -2,9 +2,11 @@ type: workspace
 model: workspace
 id: wk_EcscdC8jYZ
 createdAt: 2026-11-13T08:48:58.688275063
-updatedAt: 2026-11-13T10:04:35.679728964
-authentication: {}
-authenticationType: null
+updatedAt: 2026-11-13T11:20:36.271497035
+authentication:
+  disabled: false
+  token: ''
+authenticationType: bearer
 description: ''
 headers: []
 name: TaskFlow API

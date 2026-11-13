@@ -1,0 +1,72 @@
+type: http_request
+model: http_request
+id: rq_o3FzDTqEpC
+createdAt: 2026-11-13T11:34:48.875833749
+updatedAt: 2026-11-13T11:35:59.492708152
+workspaceId: wk_EcscdC8jYZ
+folderId: fl_LXsKpCs6W3
+authentication:
+  prefix: Bearer
+  token: ${[auth_jwtauth_token]}
+authenticationType: bearer
+body:
+  text: |-
+    {
+      "body": "woo woo"
+    }
+bodyType: application/json
+description: |-
+  Add Comment
+
+  Operation ID: tasks_api_add_comment
+
+  Parameters:
+  - project_id (path, required)
+  - task_id (path, required)
+
+  Request body:
+  Selected content type: application/json
+  Available content types: application/json
+
+  Responses:
+  - 201: Created
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+- enabled: true
+  name: Accept
+  value: application/json
+  id: null
+method: POST
+name: Add Comment
+sortPriority: 21.0
+url: ${[baseUrl]}/api/projects/6/tasks/9/comments
+urlParameters:
+- enabled: true
+  name: :project_id
+  value: '0'
+  id: null
+- enabled: true
+  name: :task_id
+  value: '0'
+  id: null
+settingSendCookies:
+  enabled: false
+  value: true
+settingStoreCookies:
+  enabled: false
+  value: true
+settingValidateCertificates:
+  enabled: false
+  value: true
+settingFollowRedirects:
+  enabled: false
+  value: true
+settingRequestTimeout:
+  enabled: false
+  value: 0
+settingHttpVersion:
+  enabled: false
+  value: auto

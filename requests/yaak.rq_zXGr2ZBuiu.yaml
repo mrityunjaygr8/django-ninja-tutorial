@@ -2,16 +2,18 @@ type: http_request
 model: http_request
 id: rq_zXGr2ZBuiu
 createdAt: 2026-11-13T09:17:11.049335444
-updatedAt: 2026-11-13T09:17:30.074907315
+updatedAt: 2026-11-13T11:23:05.990606932
 workspaceId: wk_EcscdC8jYZ
 folderId: fl_sjsXspt9S4
-authentication: {}
-authenticationType: null
+authentication:
+  prefix: Bearer
+  token: ${[auth_jwtauth_token]}
+authenticationType: bearer
 body:
   text: |-
     {
-      "name": "red",
-      "color": "#ff0000"
+      "name": "oink",
+      "color": "#110000"
     }
 bodyType: application/json
 description: |-
@@ -39,8 +41,8 @@ headers:
   id: null
 method: POST
 name: Create Label
-sortPriority: 7.0
-url: ${[baseUrl]}/api/projects/4/labels
+sortPriority: 11.0
+url: ${[baseUrl]}/api/projects/6/labels
 urlParameters:
 - enabled: true
   name: :project_id

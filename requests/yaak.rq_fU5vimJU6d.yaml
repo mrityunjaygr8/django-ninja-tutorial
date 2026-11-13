@@ -2,15 +2,17 @@ type: http_request
 model: http_request
 id: rq_fU5vimJU6d
 createdAt: 2026-11-13T10:35:45.432133861
-updatedAt: 2026-11-13T10:37:23.100533499
+updatedAt: 2026-11-13T10:59:09.327936510
 workspaceId: wk_EcscdC8jYZ
 folderId: fl_LXsKpCs6W3
-authentication: {}
-authenticationType: null
+authentication:
+  prefix: Bearer
+  token: ${[auth_jwtauth_token]}
+authenticationType: bearer
 body:
   text: |-
     {
-      "status": "done"
+      "status": "todo"
     }
 bodyType: application/json
 description: |-
@@ -39,8 +41,8 @@ headers:
   id: null
 method: POST
 name: Change Status
-sortPriority: 13.0
-url: ${[baseUrl]}/api/projects/4/tasks/8/status
+sortPriority: 17.0
+url: ${[baseUrl]}/api/projects/:project_id/tasks/:task_id/status
 urlParameters:
 - enabled: true
   name: :project_id

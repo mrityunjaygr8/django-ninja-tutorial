@@ -1,0 +1,59 @@
+type: http_request
+model: http_request
+id: rq_mKqLKKKEhy
+createdAt: 2026-11-13T10:59:09.326083623
+updatedAt: 2026-11-13T10:59:32.728494494
+workspaceId: wk_EcscdC8jYZ
+folderId: fl_r9S3qoXJZG
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "username": "mgr8",
+      "password": "dr0w.Ssap"
+    }
+bodyType: application/json
+description: |-
+  Signup
+
+  Operation ID: accounts_api_signup
+
+  Request body:
+  Selected content type: application/json
+  Available content types: application/json
+
+  Responses:
+  - 201: Created
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+- enabled: true
+  name: Accept
+  value: application/json
+  id: null
+method: POST
+name: Signup
+sortPriority: 2.0
+url: ${[baseUrl]}/api/auth/signup
+urlParameters: []
+settingSendCookies:
+  enabled: false
+  value: true
+settingStoreCookies:
+  enabled: false
+  value: true
+settingValidateCertificates:
+  enabled: false
+  value: true
+settingFollowRedirects:
+  enabled: false
+  value: true
+settingRequestTimeout:
+  enabled: false
+  value: 0
+settingHttpVersion:
+  enabled: false
+  value: auto

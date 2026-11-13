@@ -1,24 +1,12 @@
-from django.conf import settings
 from ninja import ModelSchema, Schema
 from pydantic import field_validator, model_validator
 from pydantic_core import PydanticCustomError
 
+from accounts.schemas import UserOut
 from projects.schema import LabelOut
-from tasks.models import Priority, TaskStatus
+from tasks.models import Comment, Priority, TaskStatus
 
 from .models import Task
-
-
-class UserOut(ModelSchema):
-    display_name: str
-
-    class Meta:
-        model = settings.AUTH_USER_MODEL
-        fields = ["id", "username"]
-
-    @staticmethod
-    def resolve_display_name(user):
-        return user.get_full_name() or user.username
 
 
 class TaskUpdate(ModelSchema):
@@ -68,3 +56,17 @@ class TaskOut(ModelSchema):
     class Meta:
         model = Task
         fields = ["id", "project", "title", "description", "created_at", "due_date"]
+
+
+class CommentIn(ModelSchema):
+    class Meta:
+        model = Comment
+        fields = ["body"]
+
+
+class CommentOut(ModelSchema):
+    author: UserOut
+
+    class Meta:
+        model = Comment
+        fields = ["id", "body", "created_at"]

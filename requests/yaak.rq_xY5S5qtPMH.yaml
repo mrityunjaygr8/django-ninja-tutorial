@@ -2,19 +2,22 @@ type: http_request
 model: http_request
 id: rq_xY5S5qtPMH
 createdAt: 2026-11-13T09:11:24.725389751
-updatedAt: 2026-11-13T10:27:35.180047823
+updatedAt: 2026-11-13T11:23:59.777341412
 workspaceId: wk_EcscdC8jYZ
 folderId: fl_LXsKpCs6W3
-authentication: {}
-authenticationType: null
+authentication:
+  prefix: Bearer
+  token: ${[auth_jwtauth_token]}
+authenticationType: bearer
 body:
   text: |-
     {
-      "title": "asdf",
-      "description": "74070",
-      "label_ids": [1],
-      "priority": 3,
-      // "due_date": "1026-12-10"
+      "title": "qwer",
+      "priority": 4,
+      "description": "",
+      "due_date": "2026-01-01",
+      "assignee_id": 1,
+      "label_ids": [2]
     }
 bodyType: application/json
 description: |-
@@ -42,8 +45,8 @@ headers:
   id: null
 method: POST
 name: Create Task
-sortPriority: 9.0
-url: ${[baseUrl]}/api/projects/4/tasks/
+sortPriority: 14.0
+url: ${[baseUrl]}/api/projects/6/tasks/
 urlParameters:
 - enabled: true
   name: :project_id

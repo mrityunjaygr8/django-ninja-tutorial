@@ -1,0 +1,58 @@
+type: http_request
+model: http_request
+id: rq_ZRM3KFcXXB
+createdAt: 2026-11-13T10:59:09.326463699
+updatedAt: 2026-11-13T11:35:19.700883913
+workspaceId: wk_EcscdC8jYZ
+folderId: fl_r9S3qoXJZG
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "refresh": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAiMSIsICJ0eXBlIjogInJlZnJlc2giLCAiZXhwIjogMTc5NTE3MzYwNH0.qxPO_wRHlwnwi9fsHL2-WrDzBb4yTrzBCiJaDknJp1Y"
+    }
+bodyType: application/json
+description: |-
+  Refresh Token
+
+  Operation ID: accounts_api_refresh_token
+
+  Request body:
+  Selected content type: application/json
+  Available content types: application/json
+
+  Responses:
+  - 200: OK
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+- enabled: true
+  name: Accept
+  value: application/json
+  id: null
+method: POST
+name: Refresh Token
+sortPriority: 4.0
+url: ${[baseUrl]}/api/auth/refresh
+urlParameters: []
+settingSendCookies:
+  enabled: false
+  value: true
+settingStoreCookies:
+  enabled: false
+  value: true
+settingValidateCertificates:
+  enabled: false
+  value: true
+settingFollowRedirects:
+  enabled: false
+  value: true
+settingRequestTimeout:
+  enabled: false
+  value: 0
+settingHttpVersion:
+  enabled: false
+  value: auto

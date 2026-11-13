@@ -1,0 +1,61 @@
+type: http_request
+model: http_request
+id: rq_Q2tCMCYGHi
+createdAt: 2026-11-13T11:34:48.875991751
+updatedAt: 2026-11-13T11:34:48.875991871
+workspaceId: wk_EcscdC8jYZ
+folderId: fl_LXsKpCs6W3
+authentication:
+  prefix: Bearer
+  token: ${[auth_jwtauth_token]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: |-
+  Delete Comment
+
+  Operation ID: tasks_api_delete_comment
+
+  Parameters:
+  - project_id (path, required)
+  - task_id (path, required)
+  - comment_id (path, required)
+
+  Responses:
+  - 204: No Content
+headers: []
+method: DELETE
+name: Delete Comment
+sortPriority: 22.0
+url: ${[baseUrl]}/api/projects/:project_id/tasks/:task_id/comments/:comment_id
+urlParameters:
+- enabled: true
+  name: :project_id
+  value: '0'
+  id: null
+- enabled: true
+  name: :task_id
+  value: '0'
+  id: null
+- enabled: true
+  name: :comment_id
+  value: '0'
+  id: null
+settingSendCookies:
+  enabled: false
+  value: true
+settingStoreCookies:
+  enabled: false
+  value: true
+settingValidateCertificates:
+  enabled: false
+  value: true
+settingFollowRedirects:
+  enabled: false
+  value: true
+settingRequestTimeout:
+  enabled: false
+  value: 0
+settingHttpVersion:
+  enabled: false
+  value: auto

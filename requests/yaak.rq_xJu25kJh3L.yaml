@@ -2,18 +2,20 @@ type: http_request
 model: http_request
 id: rq_xJu25kJh3L
 createdAt: 2026-11-13T10:35:45.431908581
-updatedAt: 2026-11-13T10:39:07.015734583
+updatedAt: 2026-11-13T10:59:09.327800801
 workspaceId: wk_EcscdC8jYZ
 folderId: fl_LXsKpCs6W3
-authentication: {}
-authenticationType: null
+authentication:
+  prefix: Bearer
+  token: ${[auth_jwtauth_token]}
+authenticationType: bearer
 body:
   text: |-
     {
-      "priority": 4,
-      "title": "asdf123",
+      "priority": 1,
+      "title": "",
       "description": "",
-      "due_date": null
+      "due_date": "2026-01-01"
     }
 bodyType: application/json
 description: |-
@@ -42,8 +44,8 @@ headers:
   id: null
 method: PATCH
 name: Update Task
-sortPriority: 12.0
-url: ${[baseUrl]}/api/projects/4/tasks/8
+sortPriority: 16.0
+url: ${[baseUrl]}/api/projects/:project_id/tasks/:task_id
 urlParameters:
 - enabled: true
   name: :project_id

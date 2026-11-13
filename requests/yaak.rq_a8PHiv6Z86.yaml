@@ -2,11 +2,13 @@ type: http_request
 model: http_request
 id: rq_a8PHiv6Z86
 createdAt: 2026-11-13T08:48:58.689197744
-updatedAt: 2026-11-13T08:48:58.689197834
+updatedAt: 2026-11-13T10:59:09.327130541
 workspaceId: wk_EcscdC8jYZ
 folderId: fl_sjsXspt9S4
-authentication: {}
-authenticationType: null
+authentication:
+  prefix: Bearer
+  token: ${[auth_jwtauth_token]}
+authenticationType: bearer
 body:
   text: |-
     {
@@ -39,7 +41,7 @@ headers:
   id: null
 method: PUT
 name: Update Project
-sortPriority: 6.0
+sortPriority: 10.0
 url: ${[baseUrl]}/api/projects/:project_id
 urlParameters:
 - enabled: true

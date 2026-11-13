@@ -2,11 +2,13 @@ type: http_request
 model: http_request
 id: rq_pBjQZLjUQG
 createdAt: 2026-11-13T08:48:58.688542423
-updatedAt: 2026-11-13T08:48:58.688542514
+updatedAt: 2026-11-13T10:59:09.326593827
 workspaceId: wk_EcscdC8jYZ
 folderId: fl_sjsXspt9S4
-authentication: {}
-authenticationType: null
+authentication:
+  prefix: Bearer
+  token: ${[auth_jwtauth_token]}
+authenticationType: bearer
 body: {}
 bodyType: null
 description: |-
@@ -23,7 +25,7 @@ headers:
   id: null
 method: GET
 name: List Projects
-sortPriority: 2.0
+sortPriority: 6.0
 url: ${[baseUrl]}/api/projects/
 urlParameters: []
 settingSendCookies:

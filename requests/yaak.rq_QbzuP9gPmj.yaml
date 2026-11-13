@@ -2,11 +2,13 @@ type: http_request
 model: http_request
 id: rq_QbzuP9gPmj
 createdAt: 2026-11-13T09:11:24.725612857
-updatedAt: 2026-11-13T09:58:14.222363614
+updatedAt: 2026-11-13T11:36:13.597134819
 workspaceId: wk_EcscdC8jYZ
 folderId: fl_LXsKpCs6W3
-authentication: {}
-authenticationType: null
+authentication:
+  prefix: Bearer
+  token: ${[auth_jwtauth_token]}
+authenticationType: bearer
 body: {}
 bodyType: null
 description: |-
@@ -27,8 +29,8 @@ headers:
   id: null
 method: GET
 name: Get Task
-sortPriority: 10.0
-url: ${[baseUrl]}/api/projects/4/tasks/1
+sortPriority: 15.0
+url: ${[baseUrl]}/api/projects/6/tasks/9
 urlParameters:
 - enabled: true
   name: :project_id
