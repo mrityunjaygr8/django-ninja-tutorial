@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_xY5S5qtPMH
 createdAt: 2026-11-13T09:11:24.725389751
-updatedAt: 2026-11-13T09:58:02.082476985
+updatedAt: 2026-11-13T10:27:35.180047823
 workspaceId: wk_EcscdC8jYZ
 folderId: fl_LXsKpCs6W3
 authentication: {}
@@ -10,9 +10,11 @@ authenticationType: null
 body:
   text: |-
     {
-      "title": "yo",
+      "title": "asdf",
       "description": "74070",
-      "label_ids": ["1"]
+      "label_ids": [1],
+      "priority": 3,
+      // "due_date": "1026-12-10"
     }
 bodyType: application/json
 description: |-

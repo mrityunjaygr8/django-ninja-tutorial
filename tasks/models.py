@@ -6,11 +6,36 @@ from projects.models import Label, Project
 # Create your models here.
 
 
+class TaskStatus(models.TextChoices):
+    TODO = "todo"
+    IN_PROGRESS = "in_progress"
+    DONE = "done"
+
+
+class Priority(models.IntegerChoices):
+    LOW = 1
+    MEDIUM = 2
+    HIGH = 3
+    URGENT = 4
+
+
+ALLOWED_TRANSITIONS = {
+    TaskStatus.TODO: {TaskStatus.IN_PROGRESS},
+    TaskStatus.IN_PROGRESS: {TaskStatus.TODO, TaskStatus.DONE},
+    TaskStatus.DONE: {TaskStatus.IN_PROGRESS},
+}
+
+
 class Task(models.Model):
     project = models.ForeignKey(Project, related_name="tasks", on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
     description = models.TextField(default="")
     created_at = models.DateTimeField(auto_now_add=True)
+    status = models.CharField(
+        max_length=20, choices=TaskStatus, default=TaskStatus.TODO
+    )
+    priority = models.IntegerField(choices=Priority, default=Priority.MEDIUM)
+    due_date = models.DateField(null=True, blank=True)
     assignee = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         null=True,
