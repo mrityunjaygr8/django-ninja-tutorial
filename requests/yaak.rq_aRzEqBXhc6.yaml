@@ -1,0 +1,53 @@
+type: http_request
+model: http_request
+id: rq_aRzEqBXhc6
+createdAt: 2026-11-13T09:11:24.725083787
+updatedAt: 2026-11-13T09:57:31.710365836
+workspaceId: wk_EcscdC8jYZ
+folderId: fl_LXsKpCs6W3
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: |-
+  List Tasks
+
+  Operation ID: tasks_api_list_tasks
+
+  Parameters:
+  - project_id (path, required)
+
+  Responses:
+  - 200: OK
+headers:
+- enabled: true
+  name: Accept
+  value: application/json
+  id: null
+method: GET
+name: List Tasks
+sortPriority: 8.0
+url: ${[baseUrl]}/api/projects/4/tasks/
+urlParameters:
+- enabled: true
+  name: :project_id
+  value: '0'
+  id: null
+settingSendCookies:
+  enabled: false
+  value: true
+settingStoreCookies:
+  enabled: false
+  value: true
+settingValidateCertificates:
+  enabled: false
+  value: true
+settingFollowRedirects:
+  enabled: false
+  value: true
+settingRequestTimeout:
+  enabled: false
+  value: 0
+settingHttpVersion:
+  enabled: false
+  value: auto

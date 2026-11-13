@@ -1,0 +1,66 @@
+type: http_request
+model: http_request
+id: rq_a8PHiv6Z86
+createdAt: 2026-11-13T08:48:58.689197744
+updatedAt: 2026-11-13T08:48:58.689197834
+workspaceId: wk_EcscdC8jYZ
+folderId: fl_sjsXspt9S4
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "name": "",
+      "description": ""
+    }
+bodyType: application/json
+description: |-
+  Update Project
+
+  Operation ID: projects_api_update_project
+
+  Parameters:
+  - project_id (path, required)
+
+  Request body:
+  Selected content type: application/json
+  Available content types: application/json
+
+  Responses:
+  - 200: OK
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+- enabled: true
+  name: Accept
+  value: application/json
+  id: null
+method: PUT
+name: Update Project
+sortPriority: 6.0
+url: ${[baseUrl]}/api/projects/:project_id
+urlParameters:
+- enabled: true
+  name: :project_id
+  value: '0'
+  id: null
+settingSendCookies:
+  enabled: false
+  value: true
+settingStoreCookies:
+  enabled: false
+  value: true
+settingValidateCertificates:
+  enabled: false
+  value: true
+settingFollowRedirects:
+  enabled: false
+  value: true
+settingRequestTimeout:
+  enabled: false
+  value: 0
+settingHttpVersion:
+  enabled: false
+  value: auto

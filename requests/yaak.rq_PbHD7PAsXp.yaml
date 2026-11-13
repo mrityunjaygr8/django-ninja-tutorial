@@ -1,0 +1,59 @@
+type: http_request
+model: http_request
+id: rq_PbHD7PAsXp
+createdAt: 2026-11-13T08:48:58.688758225
+updatedAt: 2026-11-13T08:55:03.103684501
+workspaceId: wk_EcscdC8jYZ
+folderId: fl_sjsXspt9S4
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "name": "yo",
+      "description": "yo"
+    }
+bodyType: application/json
+description: |-
+  Create Project
+
+  Operation ID: projects_api_create_project
+
+  Request body:
+  Selected content type: application/json
+  Available content types: application/json
+
+  Responses:
+  - 201: Created
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+- enabled: true
+  name: Accept
+  value: application/json
+  id: null
+method: POST
+name: Create Project
+sortPriority: 3.0
+url: ${[baseUrl]}/api/projects/
+urlParameters: []
+settingSendCookies:
+  enabled: false
+  value: true
+settingStoreCookies:
+  enabled: false
+  value: true
+settingValidateCertificates:
+  enabled: false
+  value: true
+settingFollowRedirects:
+  enabled: false
+  value: true
+settingRequestTimeout:
+  enabled: false
+  value: 0
+settingHttpVersion:
+  enabled: false
+  value: auto

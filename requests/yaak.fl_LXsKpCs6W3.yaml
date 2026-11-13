@@ -1,0 +1,34 @@
+type: folder
+model: folder
+id: fl_LXsKpCs6W3
+createdAt: 2026-11-13T09:11:24.725834380
+updatedAt: 2026-11-13T09:11:24.725834491
+workspaceId: wk_EcscdC8jYZ
+folderId: null
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: tasks
+sortPriority: 7.0
+settingSendCookies:
+  enabled: false
+  value: true
+settingStoreCookies:
+  enabled: false
+  value: true
+settingValidateCertificates:
+  enabled: false
+  value: true
+settingFollowRedirects:
+  enabled: false
+  value: true
+settingRequestTimeout:
+  enabled: false
+  value: 0
+settingRequestMessageSize:
+  enabled: false
+  value: 67108864
+settingHttpVersion:
+  enabled: false
+  value: auto

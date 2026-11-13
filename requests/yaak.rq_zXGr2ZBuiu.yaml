@@ -1,0 +1,66 @@
+type: http_request
+model: http_request
+id: rq_zXGr2ZBuiu
+createdAt: 2026-11-13T09:17:11.049335444
+updatedAt: 2026-11-13T09:17:30.074907315
+workspaceId: wk_EcscdC8jYZ
+folderId: fl_sjsXspt9S4
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "name": "red",
+      "color": "#ff0000"
+    }
+bodyType: application/json
+description: |-
+  Create Label
+
+  Operation ID: projects_api_create_label
+
+  Parameters:
+  - project_id (path, required)
+
+  Request body:
+  Selected content type: application/json
+  Available content types: application/json
+
+  Responses:
+  - 201: Created
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+- enabled: true
+  name: Accept
+  value: application/json
+  id: null
+method: POST
+name: Create Label
+sortPriority: 7.0
+url: ${[baseUrl]}/api/projects/4/labels
+urlParameters:
+- enabled: true
+  name: :project_id
+  value: '0'
+  id: null
+settingSendCookies:
+  enabled: false
+  value: true
+settingStoreCookies:
+  enabled: false
+  value: true
+settingValidateCertificates:
+  enabled: false
+  value: true
+settingFollowRedirects:
+  enabled: false
+  value: true
+settingRequestTimeout:
+  enabled: false
+  value: 0
+settingHttpVersion:
+  enabled: false
+  value: auto
